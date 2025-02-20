@@ -5,9 +5,9 @@ import App from './App.jsx'
 import { TransactionsProvider } from "./context/TransactionContext";
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <TransactionsProvider>
+  <TransactionsProvider>
+    <StrictMode>
       <App />
-    </TransactionsProvider>
-  </StrictMode>,
+    </StrictMode>
+  </TransactionsProvider>
 )
